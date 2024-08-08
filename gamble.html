@@ -11,7 +11,10 @@
         <h1>Slot-Spiel</h1>
         <div class="info">
             <p id="balance">Kontostand: 2000€</p>
-            <p>Einsatz: 20€</p>
+            <p>Min. Einsatz: 5€</p>
+            <label for="betAmount">Wetteinsatz:</label>
+            <input type="number" id="betAmount" value="20" min="5" />
+            <p id="betDisplay">Einsatz: 20€</p>
         </div>
         <div class="slot-machine">
             <div class="slot" id="slot1">🍒</div>
@@ -21,6 +24,13 @@
         <button id="spinButton">Drehen</button>
         <p id="result">Bitte drehen Sie die Slots</p>
     </div>
+    <audio id="winSound" src="coins.mp3"></audio>
+    
+    <!-- Spotify Playlist Player -->
+    <div class="spotify-player">
+        <iframe src="https://open.spotify.com/embed/playlist/6wdl60b1yT7J7Y2Klrjels" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
